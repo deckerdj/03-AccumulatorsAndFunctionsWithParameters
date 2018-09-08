@@ -4,8 +4,8 @@ in its simplest classic forms:
    SUMMING:       total = total + number
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Daniel Decker.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -17,7 +17,7 @@ def main():
 def run_test_sum_cosines():
     """ Tests the   sum_cosines   function. """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement this function.
+    # DONE: 2. Implement this function.
     #   It TESTS the  sum_cosines  function defined below.
     #   Include at least **   3   ** tests.
     #
@@ -28,6 +28,21 @@ def run_test_sum_cosines():
     print('--------------------------------------------------')
     print('Testing the   sum_cosines   function:')
     print('--------------------------------------------------')
+
+    expected = .72435
+    answer = sum_cosines(6)
+    print('Test 1 expected:', expected)
+    print('         actual:', answer)
+
+    expected = 1.47825
+    answer = sum_cosines(7)
+    print('Test 1 expected:', expected)
+    print('         actual:', answer)
+
+    expected = 1.33275
+    answer = sum_cosines(8)
+    print('Test 1 expected:', expected)
+    print('         actual:', answer)
 
 
 def sum_cosines(n):
@@ -48,7 +63,8 @@ def sum_cosines(n):
     #   No fair running the code of  sum_cosines  to GENERATE
     #   test cases; that would defeat the purpose of TESTING!
     # ------------------------------------------------------------------
-
+    num = math.c
+    return sum_cosines(num)
 
 def run_test_sum_square_roots():
     """ Tests the   sum_square_roots   function. """

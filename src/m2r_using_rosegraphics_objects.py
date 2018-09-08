@@ -5,8 +5,8 @@ This module uses ROSEGRAPHICS to demonstrate:
   -- accessing their DATA via INSTANCE VARIABLES.
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Daniel Decker.
+"""  # DONE
 
 ########################################################################
 #
@@ -17,7 +17,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Mark Hays, Amanda Stouder,
 #     a. For the RoseGraphics coordinate system:
 #
 #        -- Where is the (0, 0) point on the screen?
-#              WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#              Upper left corner
 #
 #        -- In what direction on the screen
 #           does the positive X-axis point?
@@ -52,7 +52,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Mark Hays, Amanda Stouder,
 #                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
 #
 #     f. What does a RoseWindow RENDER method do?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            Display on screen the attached objects
 #
 #     g. When is a RoseWindow close_on_mouse_click method call
 #        necessary?  Why?
@@ -136,6 +136,7 @@ def example3():
     radius = 50
     circle = rg.Circle(center_point, radius)
     circle.fill_color = 'green'
+    circle.attach_to(window)
     circle.attach_to(window)
 
     # ------------------------------------------------------------------
