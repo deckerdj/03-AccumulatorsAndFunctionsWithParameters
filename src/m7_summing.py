@@ -29,6 +29,7 @@ def run_test_sum_cosines():
     print('Testing the   sum_cosines   function:')
     print('--------------------------------------------------')
 
+    #Test 1
     expected = .72435
     answer = sum_cosines(6)
     print('Test 1 expected:', expected)
@@ -63,13 +64,13 @@ def sum_cosines(n):
     #   No fair running the code of  sum_cosines  to GENERATE
     #   test cases; that would defeat the purpose of TESTING!
     # ------------------------------------------------------------------
-    num = math.c
+    num = n
     return sum_cosines(num)
 
 def run_test_sum_square_roots():
     """ Tests the   sum_square_roots   function. """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement this function.
+    # DONE: 4. Implement this function.
     #   It TESTS the  sum_square_roots  function defined below.
     #   Include at least **   3   ** tests.
     #
@@ -80,6 +81,21 @@ def run_test_sum_square_roots():
     print('--------------------------------------------------')
     print('Testing the   sum_square_roots   function:')
     print('--------------------------------------------------')
+
+    expected = 19.060167
+    answer = sum_square_roots(7)
+    print('Test 1 expected', expected)
+    print('         actual', answer)
+
+    expected = 5.863703
+    answer = sum_square_roots(3)
+    print('Test 1 expected', expected)
+    print('         actual', answer)
+
+    expected = 8.692130
+    answer = sum_square_roots(4)
+    print('Test 1 expected', expected)
+    print('         actual', answer)
 
 
 def sum_square_roots(n):
@@ -103,7 +119,8 @@ def sum_square_roots(n):
     #   No fair running the code of  sum_square_roots  to GENERATE
     #   test cases; that would defeat the purpose of TESTING!
     # ------------------------------------------------------------------
-
+    num = n
+    return sum_square_roots(num)
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.

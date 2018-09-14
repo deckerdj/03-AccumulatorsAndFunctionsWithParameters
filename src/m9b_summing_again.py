@@ -4,8 +4,8 @@ in its simplest classic forms:
    SUMMING:       total = total + number
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Daniel Decker.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -17,7 +17,7 @@ def main():
 def run_test_sum_powers():
     """ Tests the   sum_powers   function. """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement this function.
+    # Done: 2. Implement this function.
     #   It TESTS the  sum_powers  function defined below.
     #   Include at least **   3   ** tests.
     #
@@ -28,6 +28,25 @@ def run_test_sum_powers():
     print('--------------------------------------------------')
     print('Testing the   sum_powers   function:')
     print('--------------------------------------------------')
+
+    # Test 1:
+    expected = 9
+    answer = sum_powers(2,3)
+    print('Test 1 expected:', expected)
+    print('         actual:', answer)
+
+    # Test 2:
+    expected = 55
+    answer = sum_powers(5, 2)
+    print('Test 1 expected:', expected)
+    print('         actual:', answer)
+
+    # Test 3:
+    expected = 2275
+    answer = sum_powers(6, 4)
+    print('Test 1 expected:', expected)
+    print('         actual:', answer)
+
 
 
 def sum_powers(n, p):
@@ -66,6 +85,23 @@ def run_test_sum_powers_in_range():
     print('Testing the   sum_powers_in_range   function:')
     print('--------------------------------------------------')
 
+    # Test 1:
+    expected = 1267
+    answer = sum_powers_in_range(3, 4, 5)
+    print('Test 1 expected:', expected)
+    print('         actual:', answer)
+
+    # Test 2:
+    expected = 3024
+    answer = sum_powers_in_range(2, 10, 3)
+    print('Test 1 expected:', expected)
+    print('         actual:', answer)
+
+    # Test 1:
+    expected = 998876435
+    answer = sum_powers_in_range(5, 25, 6)
+    print('Test 1 expected:', expected)
+    print('         actual:', answer)
 
 def sum_powers_in_range(m, n, p):
     """
