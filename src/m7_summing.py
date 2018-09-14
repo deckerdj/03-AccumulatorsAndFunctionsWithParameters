@@ -6,7 +6,7 @@ in its simplest classic forms:
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Mark Hays, Amanda Stouder,
          their colleagues and Daniel Decker.
 """  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
-
+import math
 
 def main():
     """ Calls the   TEST   functions in this module. """
@@ -30,8 +30,8 @@ def run_test_sum_cosines():
     print('--------------------------------------------------')
 
     #Test 1
-    expected = .72435
-    answer = sum_cosines(6)
+    expected = .13416
+    answer = sum_cosines(3)
     print('Test 1 expected:', expected)
     print('         actual:', answer)
 
@@ -57,15 +57,19 @@ def sum_cosines(n):
         cos(0) + cos(1) + cos(2) + cos(3)   which is about 0.13416.
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # Done: 3. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #   That is called TEST-DRIVEN DEVELOPMENT (TDD).
     #
     #   No fair running the code of  sum_cosines  to GENERATE
     #   test cases; that would defeat the purpose of TESTING!
     # ------------------------------------------------------------------
-    num = n
-    return sum_cosines(num)
+
+    total = 0
+    for k in range(n + 1):
+            total = total + math.cos(k)
+    return total
+
 
 def run_test_sum_square_roots():
     """ Tests the   sum_square_roots   function. """
@@ -82,8 +86,8 @@ def run_test_sum_square_roots():
     print('Testing the   sum_square_roots   function:')
     print('--------------------------------------------------')
 
-    expected = 19.060167
-    answer = sum_square_roots(7)
+    expected = 11.854408
+    answer = sum_square_roots(5)
     print('Test 1 expected', expected)
     print('         actual', answer)
 
@@ -112,15 +116,18 @@ def sum_square_roots(n):
       which is about 11.854408.
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # Done: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #   That is called TEST-DRIVEN DEVELOPMENT (TDD).
     #
     #   No fair running the code of  sum_square_roots  to GENERATE
     #   test cases; that would defeat the purpose of TESTING!
     # ------------------------------------------------------------------
-    num = n
-    return sum_square_roots(num)
+    total = 0
+    for k in range(n):
+        total = total + math.sqrt((k*2) + 2)
+    return total
+
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
